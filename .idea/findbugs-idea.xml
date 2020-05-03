@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FindBugs-IDEA">
+    <plugins>
+      <plugin id="com.h3xstream.findsecbugs" enabled="true">
+        <url>file:/E:/software-install/idea/findsecbugs-plugin-1.10.1(1).jar</url>
+      </plugin>
+    </plugins>
+  </component>
+</project>
