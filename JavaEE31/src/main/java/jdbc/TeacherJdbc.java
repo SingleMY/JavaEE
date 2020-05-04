@@ -23,23 +23,12 @@ public class TeacherJdbc {
         boolean flag=false;
         String sql= "SELECT PASSWORD FROM TEACHER WHERE TNO=(?) ";
         try {
-
             // 获得连接
             conn = jdbc_util.getConnection();
-
             // 开启事务，非自动提交
             jdbc_util.startTransaction();
-
-            //创建可执行语句
-            // 获得连接
-            conn = jdbc_util.getConnection();
-
-            // 开启事务，非自动提交
-            jdbc_util.startTransaction();
-
             //创建可执行语句
             stmt = conn.prepareStatement(sql);
-
             stmt.setString(1, sno);
             ResultSet rs = stmt.executeQuery();
             if(rs.next()&&rs.getString("password").equals(password)){

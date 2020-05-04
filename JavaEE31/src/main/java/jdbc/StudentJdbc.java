@@ -25,16 +25,13 @@ public class StudentJdbc {
         try {
             // 获得连接
             conn = jdbc_util.getConnection();
-
             // 开启事务，非自动提交
             jdbc_util.startTransaction();
-
             //创建可执行语句
             stmt = conn.prepareStatement(sql);
 
             //设置参数
             stmt.setString(1, sno);
-
             ResultSet rs = stmt.executeQuery();
 
             if(rs.next()&&rs.getString("password").equals(password)){
@@ -44,11 +41,10 @@ public class StudentJdbc {
             }
         } catch (SQLException e) {
             jdbc_util.rollback();//事务回退
+        }finally{
+            // 释放资源，结果集设置为null
+            jdbc_util.release(conn, stmt, null);
         }
-
-        // 释放资源，结果集设置为null
-        jdbc_util.release(conn, stmt, null);
-
         return flag;
     }
 
