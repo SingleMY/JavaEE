@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JavaEE31:war exploded2">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaEE31_war_exploded2</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JavaEE31" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.zaxxer:HikariCP:3.4.2" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.22" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.22" />
+          <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-simple:1.7.22" />
+        </element>
+      </element>
+      <element id="library" level="project" name="Maven: org.example:Database:unknown" />
+      <element id="javaee-facet-resources" facet="JavaEE31/web/Web" />
+    </root>
+  </artifact>
+</component>
