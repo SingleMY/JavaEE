@@ -7,8 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6ce1852-48a4-4c37-a773-fed4853857ff" name="默认" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/StudentHomeworkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/StudentHomeworkController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Homework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Homework.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/sHomework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/sHomework.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jdbc/StudentJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdbc/StudentJdbc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jdbc/TeacherJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdbc/TeacherJdbc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/Controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/Controller/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/Controller/StudentHomeworkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/Controller/StudentHomeworkController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/Model/sHomework.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/Model/sHomework.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/jdbc/StudentJdbc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/jdbc/StudentJdbc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/jdbc/TeacherJdbc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/jdbc/TeacherJdbc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/main/java/Model/Homework.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/StudentHomeworkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/StudentHomeworkController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/sHomework.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/sHomework.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jdbc/StudentJdbc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc/StudentJdbc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jdbc/TeacherJdbc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc/TeacherJdbc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/java/Model/Homework.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,54 +60,96 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="20" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="28" />
           <entry key="js" value="1" />
-          <entry key="jsp" value="16" />
+          <entry key="jsp" value="18" />
           <entry key="properties" value="2" />
           <entry key="sql" value="1" />
-          <entry key="xml" value="13" />
+          <entry key="xml" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="20" />
-          <entry key="JSP" value="16" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="28" />
+          <entry key="JSP" value="18" />
           <entry key="JavaScript" value="1" />
           <entry key="Properties" value="2" />
           <entry key="Scratch" value="1" />
-          <entry key="XML" value="13" />
+          <entry key="XML" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1096" />
+          <entry key="java" value="1102" />
           <entry key="jsp" value="439" />
           <entry key="properties" value="3" />
           <entry key="txt" value="12" />
-          <entry key="xml" value="93" />
+          <entry key="xml" value="94" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1096" />
+          <entry key="JAVA" value="1102" />
           <entry key="JSP" value="439" />
           <entry key="PLAIN_TEXT" value="12" />
           <entry key="Properties" value="3" />
-          <entry key="XML" value="93" />
+          <entry key="XML" value="94" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/StudentHomeworkController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="114" column="34" lean-forward="true" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
+            <state relative-caret-position="439">
+              <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
               <folding>
-                <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="62" column="14" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/IndexController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="11" lean-forward="true" selection-end-line="78" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#Register#0;class#IndexController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/dispatcher-servlet.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-88">
+              <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/student.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="97" column="44" lean-forward="true" selection-start-line="69" selection-start-column="36" selection-end-line="97" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -105,6 +164,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <replaceStrings>
+      <replace>Homework</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -118,18 +182,19 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/jdbc/JdbcUtil.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/target/JavaEE04SpringMVC/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/TeacherHomeworkController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Model/sHomework.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/homework.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/student.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/homeworksubmit.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/StudentHomeworkController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/Homework.java" />
         <option value="$PROJECT_DIR$/src/main/java/jdbc/StudentJdbc.java" />
         <option value="$PROJECT_DIR$/src/main/java/jdbc/TeacherJdbc.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/sHomework.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/StudentHomeworkController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/IndexController.java" />
       </list>
     </option>
   </component>
@@ -145,13 +210,6 @@
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -169,7 +227,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="142" />
     <option name="y" value="12" />
     <option name="width" value="1735" />
@@ -211,6 +269,14 @@
               <item name="JavaEE04SpringMVC" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaEE04SpringMVC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEE04SpringMVC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -219,80 +285,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaEE04SpringMVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaEE04SpringMVC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaEE04SpringMVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaEE04SpringMVC" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaEE04SpringMVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaEE04SpringMVC" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaEE04SpringMVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaEE04SpringMVC" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaEE04SpringMVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaEE04SpringMVC" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaEE04SpringMVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaEE04SpringMVC" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="JavaEE04SpringMVC" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaEE04SpringMVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaEE04SpringMVC" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="JavaEE04SpringMVC" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaEE04SpringMVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaEE04SpringMVC" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="JavaEE04SpringMVC" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaEE04SpringMVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaEE04SpringMVC" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="JavaEE04SpringMVC" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaEE04SpringMVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaEE04SpringMVC" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="JavaEE04SpringMVC" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -306,14 +298,14 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588702444210" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588737106763" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaEE-SpringMVC" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.10121457" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="project.structure.side.proportion" value="0.36501518" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -427,15 +419,16 @@
       <option name="presentableId" value="Default" />
       <updated>1588658008432</updated>
       <workItem from="1588658014905" duration="31894000" />
-      <workItem from="1588700098434" duration="2303000" />
+      <workItem from="1588700098434" duration="9644000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34197000" />
+    <option name="totallyTimeSpent" value="41538000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="1" />
@@ -444,10 +437,10 @@
       <window_info id="Capture Tool" order="4" />
       <window_info id="设计器" order="5" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.22587131" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.22587131" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32973805" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -455,9 +448,9 @@
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32973805" />
       <window_info anchor="bottom" id="Analysis" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32973805" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
       <window_info anchor="bottom" id="Spring" order="11" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.33002833" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.33002833" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
@@ -468,7 +461,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="right" id="调色板" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32932332" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32908848" />
       <window_info anchor="right" id="Database" order="6" weight="0.32908848" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -509,20 +502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2498e93e-04d0-4257-ad7e-2934526c19bd/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -530,13 +509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -561,37 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/sHomework.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="34" column="56" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="62" column="14" lean-forward="true" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/student.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="95" column="52" lean-forward="true" selection-start-line="95" selection-start-column="52" selection-end-line="95" selection-end-column="52" />
-          <folding>
-            <element signature="n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/homework.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -603,13 +544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="66" column="49" lean-forward="true" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/StudentHomeworkController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="76" column="38" lean-forward="true" selection-start-line="76" selection-start-column="38" selection-end-line="76" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -625,12 +559,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Homework.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/sHomework.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jdbc/TeacherJdbc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="383" selection-start-line="383" selection-end-line="383" />
+        <state relative-caret-position="140">
+          <caret line="95" column="16" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#Teacher_login#0;class#TeacherJdbc#0" />
+            <element signature="e#2298#2308#0" expanded="true" />
             <element signature="method#AddStudent#0;class#TeacherJdbc#0" />
             <element signature="method#QueryStudent#0;class#TeacherJdbc#0" />
             <element signature="method#QuerySubmit#0;class#TeacherJdbc#0" />
@@ -643,13 +593,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jdbc/StudentJdbc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
+        <state relative-caret-position="175">
+          <caret line="106" column="24" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Student_login#0;class#StudentJdbc#0" />
             <element signature="method#InsertStudent#0;class#StudentJdbc#0" />
-            <element signature="method#CheckHomework#0;class#StudentJdbc#0" />
             <element signature="method#QuerySubmit#0;class#StudentJdbc#0" />
             <element signature="method#QuerySubmitContent#0;class#StudentJdbc#0" />
             <element signature="method#InsertSubmit#0;class#StudentJdbc#0" />
@@ -657,12 +606,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/JavaEE04SpringMVC.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="114" column="34" lean-forward="true" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
+        <state relative-caret-position="-1634">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="40" column="17" selection-end-line="53" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="8" lean-forward="true" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-88">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/student.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="97" column="44" lean-forward="true" selection-start-line="69" selection-start-column="36" selection-end-line="97" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/StudentHomeworkController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="62" column="14" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="11" lean-forward="true" selection-end-line="78" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Register#0;class#IndexController#0" />
           </folding>
         </state>
       </provider>
@@ -677,7 +685,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.44590494" />
+                <option value="0.36501518" />
                 <option value="0.5" />
               </list>
             </option>
@@ -686,11 +694,11 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring (JavaEE04SpringMVC)|Spring</last-edited>
+          <last-edited>Detection</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.44590494" />
+                <option value="0.36501518" />
               </list>
             </option>
           </splitter-proportions>
@@ -721,11 +729,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web|JavaEE04SpringMVC</last-edited>
+          <last-edited>Spring|JavaEE04SpringMVC</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.10121457" />
+                <option value="0.36501518" />
               </list>
             </option>
           </splitter-proportions>
@@ -737,7 +745,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.44590494" />
+                <option value="0.10121457" />
               </list>
             </option>
           </splitter-proportions>

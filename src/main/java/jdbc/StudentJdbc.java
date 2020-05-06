@@ -2,7 +2,7 @@ package jdbc;
 
 
 import Model.sHomework;
-import main.java.Model.Homework;
+import Model.Homework;
 import main.java.Model.Student;
 import main.java.Model.Submit;
 

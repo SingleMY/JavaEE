@@ -12,7 +12,7 @@ import  main.java.Model.Teacher;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
-import main.java.Model.Homework;
+import Model.Homework;
 @Controller
 public class IndexController {
     @RequestMapping(value = "index")
@@ -37,7 +37,7 @@ public class IndexController {
                 request.setAttribute("code", "400");
                 request.setAttribute("status", "登陆失败");
                 request.setAttribute("homework_list", null);
-                page = "student";
+                page = "index";
             }
 
         } else {

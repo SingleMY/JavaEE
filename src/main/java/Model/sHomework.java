@@ -1,6 +1,6 @@
 package Model;
 
-import main.java.Model.Homework;
+import Model.Homework;
 public class sHomework extends Homework {
     private String IsFinished=null;
     private String Tname=null;

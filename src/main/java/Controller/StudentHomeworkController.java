@@ -52,7 +52,7 @@ public class StudentHomeworkController {
 
         StudentJdbc student_jdbc = new StudentJdbc();
 
-        main.java.Model.Homework homework = student_jdbc.CheckHomework(h_id);
+        Model.Homework homework = student_jdbc.CheckHomework(h_id);
         request.setAttribute("homework",homework);
 
         main.java.Model.Submit sh = student_jdbc.QuerySubmitContent(sno,h_id);
