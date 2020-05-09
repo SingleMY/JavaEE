@@ -1,8 +1,7 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: 17301073
-  Date: 2020/3/9
+  Date: 2020/4/9
   Time: 20:12
   To change this template use File | Settings | File Templates.
 --%>
@@ -45,54 +44,43 @@
                             <span class="lyear-toggler-bar"></span>
                             <span class="lyear-toggler-bar"></span>
                         </div>
-                        <span class="navbar-page-title">学生列表</span>
+                        <span class="navbar-page-title">添加学生</span>
                     </div>
 
                     <ul class="topbar-right">
                         <li class="dropdown dropdown-profile">
                             <span>工号：</span>
-                            <span><%=session.getAttribute("tno")%></span>
+                            <%=session.getAttribute("tno")%>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
-
         <main class="lyear-layout-content">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
-                            <div class="card-header" >
-                                <div align="right">
-                                    <a type="submit" class="btn bg-primary"  href="addstudent.jsp" >添加学生</a>
-                                </div>
-
-                            </div>
                             <div class="card-body">
-                                <table class="table">
-                                    <thead>
-                                    <tr>
-                                        <th style="text-align: center">Index</th>
-                                        <th style="text-align: center">Sno</th>
-                                        <th style="text-align: center">Sname</th>
-                                        <th style="text-align: center">Option</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <c:forEach items="${student_list}" var="list" varStatus="status">
-                                    <tr style="text-align: center">
-                                        <td scope="row" style="text-align: center"> ${status.count} </td>
-                                        <td>${list.sno}</td>
-                                        <td>${list.sname}</td>
-                                        <td>
-                                            <%--<% request.setAttribute("sno",student.getSno());%>--%>
-                                            <a type="submit"  class="btn btn-primary btn-xs"    href="studentdelete?sno=${list.sno}" >删除</a>
-                                        </td>
-                                    </tr>
-                                    </c:forEach>
-                                    </tbody>
-                                </table>
+                                <form action="addstudent" method="post" class="row">
+                                    <div class="form-group col-md-12">
+                                        <label for="sno">学号</label>
+                                        <input type="text" class="form-control" id="sno" name="sno"  placeholder="请输入学号..." />
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <label for="sname">学生姓名</label>
+                                        <input type="text" class="form-control" id="sname" name="sname" placeholder="请输入学生姓名..."/>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <label for="password">密码</label>
+                                        <input type="text" class="form-control" id="password" name="password" placeholder="请输入密码...">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input type="submit" class="btn btn-primary" value="完成" />
+                                        <a type="submit" class="btn btn-default" href="studentlist">返 回</a>
+                                    </div>
+                                </form>
+
                             </div>
                         </div>
                     </div>

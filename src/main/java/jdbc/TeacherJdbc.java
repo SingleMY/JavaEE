@@ -2,6 +2,8 @@ package jdbc;
 
 import Bean.*;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
@@ -91,8 +93,9 @@ public class TeacherJdbc {
             stmt = conn.prepareStatement(sql);
             stmt.setString(1, tno);
             ResultSet rs = stmt.executeQuery();
-            ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+
             while (rs.next()) {
+                ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
                 sHomework shomework = (sHomework) applicationContext.getBean("shomework");
                 shomework.setH_id(rs.getString("h_id"));
                 shomework.setTitle(rs.getString("title"));

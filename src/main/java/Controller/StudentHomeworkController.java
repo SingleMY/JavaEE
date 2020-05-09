@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
+@RequestMapping("/")
 public class StudentHomeworkController {
     @RequestMapping("homeworklist_student")
     public String  Student_Index(HttpServletRequest request){

@@ -7,48 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6ce1852-48a4-4c37-a773-fed4853857ff" name="默认" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/addhomework.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/studentlist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/addstudent.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/StudentHomeworkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/StudentHomeworkController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TeacherHomeworkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/TeacherHomeworkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Homework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bean/Homework.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bean/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Submit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bean/Submit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Teach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bean/Teach.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bean/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/sHomework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bean/sHomework.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jdbc/StudentJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdbc/StudentJdbc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jdbc/TeacherJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdbc/TeacherJdbc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/teacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/teacher.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/Controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/Controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/Controller/StudentHomeworkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/Controller/StudentHomeworkController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/Controller/TeacherHomeworkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/Controller/TeacherHomeworkController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/Model/Homework.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/Model/sHomework.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/jdbc/StudentJdbc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/jdbc/StudentJdbc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/jdbc/TeacherJdbc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/jdbc/TeacherJdbc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/main/java/Model/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/main/java/Model/Submit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/main/java/Model/Teach.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JavaEE04SpringMVC/WEB-INF/classes/main/java/Model/Teacher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JavaEE04SpringMVC/teacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JavaEE04SpringMVC/teacher.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller/StudentHomeworkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/StudentHomeworkController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller/TeacherHomeworkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/TeacherHomeworkController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Homework.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/sHomework.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jdbc/StudentJdbc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc/StudentJdbc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jdbc/TeacherJdbc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc/TeacherJdbc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/java/Model/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/java/Model/Submit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/java/Model/Teach.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/java/Model/Teacher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/studentlist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/studentlist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jdbc/TeacherJdbc.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -88,10 +54,11 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="0-SNAPSHOT" value="1" />
+          <entry key="class" value="1" />
           <entry key="iml" value="2" />
-          <entry key="java" value="52" />
+          <entry key="java" value="57" />
           <entry key="js" value="1" />
-          <entry key="jsp" value="25" />
+          <entry key="jsp" value="32" />
           <entry key="png" value="1" />
           <entry key="properties" value="2" />
           <entry key="sql" value="1" />
@@ -100,10 +67,11 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CLASS" value="1" />
           <entry key="IDEA_MODULE" value="2" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="52" />
-          <entry key="JSP" value="25" />
+          <entry key="JAVA" value="57" />
+          <entry key="JSP" value="32" />
           <entry key="JavaScript" value="1" />
           <entry key="Properties" value="2" />
           <entry key="Scratch" value="1" />
@@ -113,8 +81,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1772" />
-          <entry key="jsp" value="621" />
+          <entry key="java" value="2315" />
+          <entry key="jsp" value="781" />
           <entry key="properties" value="3" />
           <entry key="txt" value="12" />
           <entry key="xml" value="106" />
@@ -122,8 +90,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1772" />
-          <entry key="JSP" value="621" />
+          <entry key="JAVA" value="2315" />
+          <entry key="JSP" value="781" />
           <entry key="PLAIN_TEXT" value="12" />
           <entry key="Properties" value="3" />
           <entry key="XML" value="106" />
@@ -134,38 +102,61 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/TeacherHomeworkController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/StudentHomeworkController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="69" column="24" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
+            <state relative-caret-position="326">
+              <caret line="40" column="34" lean-forward="true" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1088#1099#0" expanded="true" />
-                <element signature="e#2061#2072#0" expanded="true" />
-                <element signature="method#Checkhomework#0;class#TeacherHomeworkController#0" />
-                <element signature="method#AdHomeworkDelete#0;class#TeacherHomeworkController#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jdbc/JdbcUtil.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/TeacherHomeworkController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1121">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="311">
+              <caret line="39" column="59" lean-forward="true" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1088#1099#0" expanded="true" />
+                <element signature="method#Student_list#0;class#TeacherHomeworkController#0" />
+                <element signature="method#AddStudent#0;class#TeacherHomeworkController#0" />
+                <element signature="method#AdHomeworkDelete#0;class#TeacherHomeworkController#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/IndexController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jdbc/StudentJdbc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="44" column="96" lean-forward="true" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="96" />
+            <state relative-caret-position="554">
+              <caret line="237" column="40" selection-start-line="237" selection-start-column="40" selection-end-line="237" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1335#1341#0" />
+                <element signature="method#Student_login#0;class#StudentJdbc#0" />
+                <element signature="method#CheckHomework#0;class#StudentJdbc#0" />
+                <element signature="method#QuerySubmit#0;class#StudentJdbc#0" />
+                <element signature="method#QuerySubmitContent#0;class#StudentJdbc#0" />
+                <element signature="method#InsertSubmit#0;class#StudentJdbc#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jdbc/TeacherJdbc.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="97" column="86" selection-start-line="97" selection-start-column="86" selection-end-line="97" selection-end-column="86" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#Teacher_login#0;class#TeacherJdbc#0" />
+                <element signature="method#AddTeacher#0;class#TeacherJdbc#0" />
+                <element signature="method#QueryStudent#0;class#TeacherJdbc#0" />
+                <element signature="method#QuerySubmit#0;class#TeacherJdbc#0" />
               </folding>
             </state>
           </provider>
@@ -212,14 +203,16 @@
         <option value="$PROJECT_DIR$/src/main/java/Bean/Teacher.java" />
         <option value="$PROJECT_DIR$/src/main/java/jdbc/StudentJdbc.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/StudentHomeworkController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Bean/sHomework.java" />
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/jdbc/TeacherJdbc.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/teacher.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/addhomework.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/StudentHomeworkController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/addstudent.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/studentlist.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/TeacherHomeworkController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jdbc/TeacherJdbc.java" />
       </list>
     </option>
   </component>
@@ -334,7 +327,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589039251684" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589047586483" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaEE-SpringMVC" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -458,12 +451,12 @@
       <workItem from="1588700098434" duration="9644000" />
       <workItem from="1589010936781" duration="32000" />
       <workItem from="1589012618040" duration="618000" />
-      <workItem from="1589026108738" duration="12778000" />
+      <workItem from="1589026108738" duration="19796000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54966000" />
+    <option name="totallyTimeSpent" value="61984000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -662,21 +655,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/img/logo-sidebar.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jdbc/StudentJdbc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1010">
-          <caret line="237" column="40" selection-start-line="237" selection-start-column="40" selection-end-line="237" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Student_login#0;class#StudentJdbc#0" />
-            <element signature="method#CheckHomework#0;class#StudentJdbc#0" />
-            <element signature="method#QuerySubmit#0;class#StudentJdbc#0" />
-            <element signature="method#QuerySubmitContent#0;class#StudentJdbc#0" />
-            <element signature="method#InsertSubmit#0;class#StudentJdbc#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JavaEE04SpringMVC.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -714,21 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jdbc/TeacherJdbc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="251" column="78" selection-start-line="251" selection-start-column="78" selection-end-line="251" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Teacher_login#0;class#TeacherJdbc#0" />
-            <element signature="method#AddTeacher#0;class#TeacherJdbc#0" />
-            <element signature="method#QueryHomework#0;class#TeacherJdbc#0" />
-            <element signature="e#2196#2207#0" expanded="true" />
-            <element signature="e#7001#7009#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Bean/sHomework.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -742,20 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/student.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="88" column="71" lean-forward="true" selection-start-line="88" selection-start-column="71" selection-end-line="88" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/teacher.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="85" column="62" lean-forward="true" selection-start-line="85" selection-start-column="62" selection-end-line="85" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/addhomework.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -763,48 +712,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/studentlist.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/spring-context-5.2.3.RELEASE.jar!/org/springframework/context/annotation/Scope.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/student.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="89" column="76" lean-forward="true" selection-start-line="89" selection-start-column="76" selection-end-line="89" selection-end-column="76" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Controller/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="44" column="96" lean-forward="true" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="96" />
+        <state relative-caret-position="-1178">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="e#1335#1341#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/StudentHomeworkController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="25" column="109" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="109" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/TeacherHomeworkController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="69" column="24" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1088#1099#0" expanded="true" />
-            <element signature="e#2061#2072#0" expanded="true" />
-            <element signature="method#Checkhomework#0;class#TeacherHomeworkController#0" />
-            <element signature="method#AdHomeworkDelete#0;class#TeacherHomeworkController#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jdbc/JdbcUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1121">
+        <state relative-caret-position="19">
           <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/addstudent.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="70" column="71" lean-forward="true" selection-start-line="70" selection-start-column="71" selection-end-line="70" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/teacher.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1045">
+          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/studentlist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="92" column="48" lean-forward="true" selection-start-line="92" selection-start-column="48" selection-end-line="92" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/StudentHomeworkController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="40" column="34" lean-forward="true" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdbc/StudentJdbc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="237" column="40" selection-start-line="237" selection-start-column="40" selection-end-line="237" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Student_login#0;class#StudentJdbc#0" />
+            <element signature="method#CheckHomework#0;class#StudentJdbc#0" />
+            <element signature="method#QuerySubmit#0;class#StudentJdbc#0" />
+            <element signature="method#QuerySubmitContent#0;class#StudentJdbc#0" />
+            <element signature="method#InsertSubmit#0;class#StudentJdbc#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdbc/TeacherJdbc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="97" column="86" selection-start-line="97" selection-start-column="86" selection-end-line="97" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Teacher_login#0;class#TeacherJdbc#0" />
+            <element signature="method#AddTeacher#0;class#TeacherJdbc#0" />
+            <element signature="method#QueryStudent#0;class#TeacherJdbc#0" />
+            <element signature="method#QuerySubmit#0;class#TeacherJdbc#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/TeacherHomeworkController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="39" column="59" lean-forward="true" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1088#1099#0" expanded="true" />
+            <element signature="method#Student_list#0;class#TeacherHomeworkController#0" />
+            <element signature="method#AddStudent#0;class#TeacherHomeworkController#0" />
+            <element signature="method#AdHomeworkDelete#0;class#TeacherHomeworkController#0" />
+          </folding>
         </state>
       </provider>
     </entry>

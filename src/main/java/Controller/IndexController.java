@@ -1,8 +1,8 @@
 package Controller;
-import Bean.sHomework;
 import jdbc.StudentJdbc;
 import jdbc.TeacherJdbc;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Scope;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,14 +15,20 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 import Bean.Homework;
 @Controller
+@Scope("prototype")
 public class IndexController {
+    //单例模式
+    private  static   ApplicationContext applicationContext;
+    static {
+        applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+    }
     @RequestMapping(value = "index")
     public String Login(@RequestParam("login_no") String login_no,
                         @RequestParam("login_password") String login_password,
                         @RequestParam("login_identity") String login_identity,
                         HttpServletRequest request, HttpServletResponse response) {
 
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+
         String page = "404";
         if (login_identity.equals("学生")) {
             StudentJdbc student_jdbc = (StudentJdbc) applicationContext.getBean("student_jdbc");
