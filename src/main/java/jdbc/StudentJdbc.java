@@ -1,10 +1,10 @@
 package jdbc;
 
 
-import Model.sHomework;
-import Model.Homework;
-import main.java.Model.Student;
-import main.java.Model.Submit;
+import Bean.sHomework;
+import Bean.Homework;
+import Bean.Student;
+import Bean.Submit;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

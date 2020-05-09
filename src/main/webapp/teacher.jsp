@@ -1,5 +1,5 @@
-<%@ page import="java.util.List" %>
-<%@ page import="jdbc.TeacherJdbc" %><%--
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%--
   Created by IntelliJ IDEA.
   User: 17301073
   Date: 2020/3/9
@@ -30,8 +30,8 @@
             <div class="lyear-layout-sidebar-scroll">
                 <nav class="sidebar-main">
                     <ul class="nav nav-drawer">
-                        <li class="nav-item"><a href="HomeworkListServlet">作业列表</a></li>
-                        <li class="nav-item"><a href="StudentListServlet">学生列表</a></li>
+                        <li class="nav-item"><a href="homeworklist_teacher">作业列表</a></li>
+                        <li class="nav-item"><a href="studentlist">学生列表</a></li>
                     </ul>
                 </nav>
             </div>
@@ -66,7 +66,7 @@
                         <div class="card">
                             <div class="card-header" >
                                 <div align="right">
-                                    <a type="submit" class="btn bg-primary"  href="AddHomework.jsp" >新建作业</a>
+                                    <a type="submit" class="btn bg-primary"  href="addhomework.jsp" >新建作业</a>
                                 </div>
 
                             </div>
@@ -83,33 +83,20 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <%
-                                        List<main.java.Model.Homework> homeworkList = (List<main.java.Model.Homework>) request.getAttribute("homework_list");
-                                        int i = 0;
-                                        for(main.java.Model.Homework homework: homeworkList) {
-
-                                            int count=0;
-                                            TeacherJdbc teacherJdbc = new TeacherJdbc();
-                                            String tno =(String)request.getSession().getAttribute("tno");
-                                            count= teacherJdbc.QuerySubmit(homework.getH_id(),tno).size();
-
-                                    %>
+                                    <c:forEach items="${shomework_list}" var="list" varStatus="status">
                                     <tr style="text-align: center">
-                                        <td scope="row" style="text-align: center"> <%=i+1%> </td>
-                                        <td><%=homework.getTitle()%></td>
-                                        <td><%=homework.getCreate_time()%></td>
-                                        <td><%=homework.getDeadline()%></td>
-                                        <td><%=count%></td>
+                                        <td scope="row" style="text-align: center"> ${status.count} </td>
+                                        <td>${list.getTitle()}</td>
+                                        <td>${list.create_time}</td>
+                                        <td>${list.getDeadline()}</td>
+                                        <td>${list.count}</td>
                                         <td>
-                                            <a type="submit" class="btn btn-primary btn-xs"  href="EditHomework.jsp?h_id=<%=homework.getH_id() %>&title=<%=homework.getTitle() %>&content=<%=homework.getContent()%>&deadline=<%=homework.getDeadline()%> ">编辑</a>
+                                            <a type="submit" class="btn btn-primary btn-xs"  href="checkhomework?h_id=${list.h_id} ">检查</a>
 
-                                            <a type="submit"  class="btn btn-primary btn-xs"   <% request.setAttribute("h_id",homework.getH_id());%> href="HomeworkDeleteServlet" >删除</a>
+                                            <a type="submit"  class="btn btn-primary btn-xs"  href="homeworkdelete?h_id=${list.h_id}">删除</a>
                                         </td>
                                     </tr>
-                                    <%
-                                            i++;
-                                        }
-                                    %>
+                                    </c:forEach>
                                     </tbody>
                                 </table>
                             </div>

@@ -1,4 +1,4 @@
-package Model;
+package Bean;
 
 public class Homework {
     private String h_id;

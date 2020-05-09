@@ -1,4 +1,3 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: 17301073
@@ -6,7 +5,8 @@
   Time: 20:12
   To change this template use File | Settings | File Templates.
 --%>
-
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.util.Date" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -46,59 +46,51 @@
                             <span class="lyear-toggler-bar"></span>
                             <span class="lyear-toggler-bar"></span>
                         </div>
-                        <span class="navbar-page-title">作业列表</span>
+                        <span class="navbar-page-title">新建作业</span>
                     </div>
 
                     <ul class="topbar-right">
                         <li class="dropdown dropdown-profile">
                             <span>工号：</span>
-                            <span><%=session.getAttribute("tno")%></span>
+                            <%=session.getAttribute("tno")%>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
-
         <main class="lyear-layout-content">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
-                            <div class="card-header" >
-                                <div align="right">
-                                    <a type="submit" class="btn bg-primary"  href="addhomework.jsp" >新建作业</a>
-                                </div>
-
-                            </div>
                             <div class="card-body">
-                                <table class="table">
-                                    <thead>
-                                    <tr>
-                                        <th style="text-align: center">Index</th>
-                                        <th style="text-align: center">Title</th>
-                                        <th style="text-align: center">Create_Time</th>
-                                        <th style="text-align: center">Deadline</th>
-                                        <th style="text-align: center">Count</th>
-                                        <th style="text-align: center">Option</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <c:forEach items="${shomework_list}" var="list" varStatus="status">
-                                    <tr style="text-align: center">
-                                        <td scope="row" style="text-align: center"> ${status.count} </td>
-                                        <td>${list.getTitle()}</td>
-                                        <td>${list.create_time}</td>
-                                        <td>${list.getDeadline()}</td>
-                                        <td>${list.count}</td>
-                                        <td>
-                                            <a type="submit" class="btn btn-primary btn-xs"  href="checkhomework?h_id=${list.h_id} ">检查</a>
+                                <form action="addhomework" method="post" class="row">
+                                    <div class="form-group col-md-12">
+                                        <label for="h_id">ID</label>
+                                        <input type="text" class="form-control" id="h_id" name="h_id"  placeholder="请输入ID..." />
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <label for="title">作业名称</label>
+                                        <input type="text" class="form-control" id="title" name="title" placeholder="请输入作业名称..."/>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <label for="content">作业详情</label>
+                                        <input type="text" class="form-control" id="content" name="content" placeholder="请输入作业详情...">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <label for="create_time">创建时间</label>
+                                        <input class="form-control" id="create_time" name="create_time"  value="<%=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date())%>" readonly/>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <label for="deadline">截止时间</label>
+                                        <input class="form-control" id="deadline" name="deadline" type="datetime-local" />
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input type="submit" class="btn btn-primary" value="发布" />
+                                        <a type="submit" class="btn btn-default" href="homeworklist_teacher">返 回</a>
+                                    </div>
+                                </form>
 
-                                            <a type="submit"  class="btn btn-primary btn-xs"  href="homeworkdelete?h_id=${list.h_id}">删除</a>
-                                        </td>
-                                    </tr>
-                                    </c:forEach>
-                                    </tbody>
-                                </table>
                             </div>
                         </div>
                     </div>

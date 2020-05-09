@@ -1,9 +1,8 @@
 package jdbc;
 
-import main.java.Model.Teacher;
-import Model.Homework;
-import main.java.Model.Student;
-import main.java.Model.Submit;
+import Bean.*;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
 import java.sql.Connection;
@@ -74,11 +73,11 @@ public class TeacherJdbc {
         }
     }
 
-    public List<Homework> QueryHomework(String tno) {
+    public List<sHomework> QueryHomework(String tno) {
         PreparedStatement stmt = null;
         Connection conn = null;
 
-        List<Homework> homework_list = new ArrayList<Homework>();
+        List<sHomework> shomework_list = new ArrayList<sHomework>();
         String sql;
         sql = "SELECT * FROM HOMEWORK WHERE TNO=?";
         try {
@@ -92,15 +91,16 @@ public class TeacherJdbc {
             stmt = conn.prepareStatement(sql);
             stmt.setString(1, tno);
             ResultSet rs = stmt.executeQuery();
+            ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
             while (rs.next()) {
-                Homework homework = new Homework();
-                homework.setH_id(rs.getString("h_id"));
-                homework.setTitle(rs.getString("title"));
-                homework.setContent(rs.getString("content"));
-                homework.setCreate_time(rs.getString("create_time"));
-                homework.setDeadline(rs.getString("deadline"));
-                homework.setTno(rs.getString("tno"));
-                homework_list.add(homework);
+                sHomework shomework = (sHomework) applicationContext.getBean("shomework");
+                shomework.setH_id(rs.getString("h_id"));
+                shomework.setTitle(rs.getString("title"));
+                shomework.setContent(rs.getString("content"));
+                shomework.setCreate_time(rs.getString("create_time"));
+                shomework.setDeadline(rs.getString("deadline"));
+                shomework.setTno(rs.getString("tno"));
+                shomework_list.add(shomework);
             }
         } catch (SQLException e) {
             jdbc_util.rollback();//事务回退
@@ -108,7 +108,7 @@ public class TeacherJdbc {
             // 释放资源，结果集设置为null
             jdbc_util.release(conn, stmt, null);
         }
-        return homework_list;
+        return shomework_list;
     }
 
     public void AddHomework(Homework homework) {
@@ -248,7 +248,8 @@ public class TeacherJdbc {
 
             ResultSet rs = stmt.executeQuery();
             while (rs.next()) {
-                Submit submit = new Submit();
+                ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+                Submit submit = (Submit) applicationContext.getBean("submit");
                 submit.setH_id(rs.getString("h_id"));
                 submit.setSno(rs.getString("sno"));
                 submit.setFinished(rs.getString("finished"));

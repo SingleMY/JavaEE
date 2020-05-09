@@ -1,4 +1,3 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: 17301073
@@ -6,7 +5,7 @@
   Time: 20:12
   To change this template use File | Settings | File Templates.
 --%>
-
+<%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -30,8 +29,8 @@
             <div class="lyear-layout-sidebar-scroll">
                 <nav class="sidebar-main">
                     <ul class="nav nav-drawer">
-                        <li class="nav-item"><a href="homeworklist_teacher">作业列表</a></li>
-                        <li class="nav-item"><a href="studentlist">学生列表</a></li>
+                        <li class="nav-item"><a href="HomeworkListServlet">作业列表</a></li>
+                        <li class="nav-item"><a href="StudentListServlet">学生列表</a></li>
                     </ul>
                 </nav>
             </div>
@@ -46,7 +45,7 @@
                             <span class="lyear-toggler-bar"></span>
                             <span class="lyear-toggler-bar"></span>
                         </div>
-                        <span class="navbar-page-title">作业列表</span>
+                        <span class="navbar-page-title">学生列表</span>
                     </div>
 
                     <ul class="topbar-right">
@@ -66,7 +65,7 @@
                         <div class="card">
                             <div class="card-header" >
                                 <div align="right">
-                                    <a type="submit" class="btn bg-primary"  href="addhomework.jsp" >新建作业</a>
+                                    <a type="submit" class="btn bg-primary"  href="AddStudent.jsp" >添加学生</a>
                                 </div>
 
                             </div>
@@ -75,28 +74,30 @@
                                     <thead>
                                     <tr>
                                         <th style="text-align: center">Index</th>
-                                        <th style="text-align: center">Title</th>
-                                        <th style="text-align: center">Create_Time</th>
-                                        <th style="text-align: center">Deadline</th>
-                                        <th style="text-align: center">Count</th>
+                                        <th style="text-align: center">Sno</th>
+                                        <th style="text-align: center">Sname</th>
                                         <th style="text-align: center">Option</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <c:forEach items="${shomework_list}" var="list" varStatus="status">
+                                    <%
+                                        List<main.java.Model.Student> student_list = (List<main.java.Model.Student>) request.getAttribute("student_list");
+                                        int i = 0;
+                                        for(main.java.Model.Student student: student_list) {
+                                    %>
                                     <tr style="text-align: center">
-                                        <td scope="row" style="text-align: center"> ${status.count} </td>
-                                        <td>${list.getTitle()}</td>
-                                        <td>${list.create_time}</td>
-                                        <td>${list.getDeadline()}</td>
-                                        <td>${list.count}</td>
+                                        <td scope="row" style="text-align: center"> <%=i+1%> </td>
+                                        <td><%=student.getSno()%></td>
+                                        <td><%=student.getSname()%></td>
                                         <td>
-                                            <a type="submit" class="btn btn-primary btn-xs"  href="checkhomework?h_id=${list.h_id} ">检查</a>
-
-                                            <a type="submit"  class="btn btn-primary btn-xs"  href="homeworkdelete?h_id=${list.h_id}">删除</a>
+                                            <%--<% request.setAttribute("sno",student.getSno());%>--%>
+                                            <a type="submit"  class="btn btn-primary btn-xs"    href="StudentDeleteServlet?sno=<%=student.getSno()%>" >删除</a>
                                         </td>
                                     </tr>
-                                    </c:forEach>
+                                    <%
+                                            i++;
+                                        }
+                                    %>
                                     </tbody>
                                 </table>
                             </div>

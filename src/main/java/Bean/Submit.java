@@ -1,4 +1,4 @@
-package main.java.Model;
+package Bean;
 
 public class Submit {
     private String h_id;

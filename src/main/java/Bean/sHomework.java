@@ -1,9 +1,9 @@
-package Model;
+package Bean;
 
-import Model.Homework;
 public class sHomework extends Homework {
     private String IsFinished=null;
     private String Tname=null;
+    private int count=0;
 
     public sHomework(){
         super();
@@ -23,5 +23,13 @@ public class sHomework extends Homework {
 
     public void setTname(String tname) {
         Tname = tname;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
     }
 }

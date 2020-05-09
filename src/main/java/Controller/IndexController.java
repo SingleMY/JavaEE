@@ -1,4 +1,5 @@
 package Controller;
+import Bean.sHomework;
 import jdbc.StudentJdbc;
 import jdbc.TeacherJdbc;
 import org.springframework.context.ApplicationContext;
@@ -7,12 +8,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import main.java.Model.Student;
-import  main.java.Model.Teacher;
+import Bean.Student;
+import Bean.Teacher;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
-import Model.Homework;
+import Bean.Homework;
 @Controller
 public class IndexController {
     @RequestMapping(value = "index")
@@ -24,7 +25,7 @@ public class IndexController {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
         String page = "404";
         if (login_identity.equals("学生")) {
-            StudentJdbc student_jdbc = new StudentJdbc();
+            StudentJdbc student_jdbc = (StudentJdbc) applicationContext.getBean("student_jdbc");
             if (student_jdbc.Student_login(login_no, login_password)) {
                 //登录成功
 //                List<Homework> homework_list = student_jdbc.QueryHomework(login_no);
@@ -41,12 +42,12 @@ public class IndexController {
             }
 
         } else {
-            TeacherJdbc teacher_jdbc = new TeacherJdbc();
+            TeacherJdbc teacher_jdbc = (TeacherJdbc) applicationContext.getBean("teacher_jdbc");
             if (teacher_jdbc.Teacher_login(login_no, login_password)) {
-                List<Homework> homework_list = teacher_jdbc.QueryHomework(login_no);
-                request.setAttribute("homework_list", homework_list);
+//                List<sHomework> shomework_list = teacher_jdbc.QueryHomework(login_no);
+//                request.setAttribute("shomework_list", shomework_list);
                 request.getSession().setAttribute("tno", login_no);
-                page = "teacher";
+                page = "redirect:/homeworklist_teacher";
             }
         }
         return page;
@@ -63,13 +64,20 @@ public class IndexController {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
         String page = "404";
         if(register_identity.equals("学生")) {
-            Student student = new Student(register_no,register_name,register_password);
-            StudentJdbc student_jdbc = new StudentJdbc();
+            Student student = (Student) applicationContext.getBean("student");
+            student.setSno(register_no);
+            student.setSname(register_name);
+            student.setPassword(register_password);
+
+            StudentJdbc student_jdbc = (StudentJdbc) applicationContext.getBean("student_jdbc");
             student_jdbc.InsertStudent(student);
             page = "index";
         }else if (register_identity.equals("教师")){
-            Teacher teacher = new Teacher(register_no,register_name,register_password);
-            TeacherJdbc teacher_jdbc = new TeacherJdbc();
+            Teacher teacher = (Teacher) applicationContext.getBean("teacher");
+            teacher.setTno(register_no);
+            teacher.setTname(register_name);
+            teacher.setPassword(register_password);
+            TeacherJdbc teacher_jdbc = (TeacherJdbc)applicationContext.getBean("teacher_jdbc");
             teacher_jdbc.AddTeacher(teacher);
             page = "index";
         }

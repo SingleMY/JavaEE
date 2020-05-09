@@ -1,7 +1,12 @@
 package Controller;
 
+import Bean.Homework;
+import Bean.Submit;
+import Bean.sHomework;
 import jdbc.StudentJdbc;
 import jdbc.TeacherJdbc;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -18,13 +23,13 @@ public class StudentHomeworkController {
         //处理逻辑
         String sno = (String) request.getSession().getAttribute("sno");
 
-        StudentJdbc student_jdbc = new StudentJdbc();
-        List<Model.sHomework> homeworkList = student_jdbc.QueryHomework(sno);
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        StudentJdbc student_jdbc = (StudentJdbc) applicationContext.getBean("student_jdbc");
 
-
-        List<Model.sHomework> homework_list = new ArrayList<>();
+        List<sHomework> homeworkList = student_jdbc.QueryHomework(sno);
+        List<sHomework> homework_list = new ArrayList<>();
         TeacherJdbc teacherJdbc = new TeacherJdbc();
-        for(Model.sHomework homework: homeworkList) {
+        for(sHomework homework: homeworkList) {
             String tname = teacherJdbc.GetTeacherName(homework.getTno());
             homework.setTname(tname);
             if (student_jdbc.QuerySubmit(sno, homework.getH_id())) {
@@ -50,12 +55,13 @@ public class StudentHomeworkController {
         String sno = (String) request.getSession().getAttribute("sno");
         request.setAttribute("tname",tname);
 
-        StudentJdbc student_jdbc = new StudentJdbc();
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        StudentJdbc student_jdbc = (StudentJdbc) applicationContext.getBean("student_jdbc");
 
-        Model.Homework homework = student_jdbc.CheckHomework(h_id);
+        Homework homework = student_jdbc.CheckHomework(h_id);
         request.setAttribute("homework",homework);
 
-        main.java.Model.Submit sh = student_jdbc.QuerySubmitContent(sno,h_id);
+        Submit sh = student_jdbc.QuerySubmitContent(sno,h_id);
         request.setAttribute("sh",sh);
 
         nextPage = "homework";
@@ -72,11 +78,18 @@ public class StudentHomeworkController {
         //处理逻辑
         String sno = (String) request.getSession().getAttribute("sno");
         String finished = "是";
-        StudentJdbc student_jdbc = new StudentJdbc();
-        main.java.Model.Submit sh = new main.java.Model.Submit(h_id,sno,finished,commit_time,commit_content);
+
+
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        Submit sh = (Submit) applicationContext.getBean("submit");
+        StudentJdbc student_jdbc = (StudentJdbc) applicationContext.getBean("student_jdbc");
+        sh.setH_id(h_id);
+        sh.setSno(sno);
+        sh.setFinished(finished);
+        sh.setCommit_time(commit_time);
+        sh.setCommit_content(commit_content);
         student_jdbc.InsertSubmit(sh);
         nextPage = "redirect:/homeworklist_student";
-
         return nextPage;
     }
 }
