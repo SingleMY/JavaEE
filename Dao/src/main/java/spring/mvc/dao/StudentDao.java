@@ -30,7 +30,7 @@ public class StudentDao {
         return studentDao;
     }
 
-    public boolean student_login(String sno, String password ,String identify) {
+    public boolean student_login(String sno, String password ) {
 
         boolean flag = false;
         StringBuilder  sql = new StringBuilder("SELECT * FROM STUDENT WHERE SNO=");
@@ -50,7 +50,7 @@ public class StudentDao {
         return flag;
     }
     // 插入学生信息
-    public void insertStudent(Student student) {
+    public static void insertStudent(Student student) {
         StringBuilder sql = new StringBuilder("insert into student values('");
         sql.append(student.getSno()).append("','").append(student.getSname()).append("','")
                 .append(student.getPassword()).append("');");

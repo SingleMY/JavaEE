@@ -12,7 +12,7 @@ import java.util.List;
 public class SubmitDao {
 
     @Autowired
-    Submit submit;
+    private static Submit submit;
     private static SubmitDao submitDao;
     private static List<Class<?>> submitFieldClasses;
 
@@ -40,7 +40,7 @@ public class SubmitDao {
         }
     }
 
-    public Submit QuerySubmitContent(String sno , String h_id  ) {
+    public static Submit QuerySubmitContent(String sno , String h_id  ) {
         StringBuilder sql = new StringBuilder("SELECT * FROM SH WHERE H_ID= ");
         sql.append(h_id).append(" and sno= ").append(sno).append(";");
         List<List<Object>> resultList = null;

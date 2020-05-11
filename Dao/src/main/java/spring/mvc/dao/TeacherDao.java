@@ -25,7 +25,7 @@ public class TeacherDao {
         return teacherDao;
     }
 
-    public boolean teacher_login(String tno, String password ,String identify) {
+    public static boolean teacher_login(String tno, String password ) {
 
         boolean flag = false;
         StringBuilder  sql = new StringBuilder("SELECT * FROM TEACHER WHERE TNO=");
@@ -45,7 +45,7 @@ public class TeacherDao {
         return flag;
     }
 
-    public void AddTeacher(Teacher teacher) {
+    public static void AddTeacher(Teacher teacher) {
         StringBuilder sql = new StringBuilder("insert into teacher values('");
         sql.append(teacher.getTno()).append("','").append(teacher.getTname()).append("','")
                 .append(teacher.getPassword()).append("');");
