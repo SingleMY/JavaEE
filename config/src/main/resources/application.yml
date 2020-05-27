@@ -9,10 +9,6 @@ spring:
           username: 1542051400@qq.com
           password: hualing.5251
           basedir: E:\software-workspace\springcloud\config\basedir
-eureka:
-  client:
-    service-url:
-        defaultZone: http://localhost:8761/eureka/
 management:
   endpoints:
     web:
