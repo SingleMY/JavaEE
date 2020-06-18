@@ -68,4 +68,12 @@ public Result getInfo(HttpServletRequest request) {
         }
     }
 
+    @PostMapping(value = "/logout")
+    public Result logout( HttpServletRequest request) {
+
+        request.setAttribute(CurrentUserConstants.CURRENT_USER, null);
+
+        return  new Result(200,"登出成功");
+    }
+
 }

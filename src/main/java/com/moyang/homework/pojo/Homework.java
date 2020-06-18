@@ -23,9 +23,10 @@ public class Homework {
     private String h_id;
     private String title;
     private String content;
-    private Timestamp create_time;
-    private Timestamp deadline;
+    private String create_time;
+    private String deadline;
     private String course_no;
+    private String finished;
 
 
     @Override

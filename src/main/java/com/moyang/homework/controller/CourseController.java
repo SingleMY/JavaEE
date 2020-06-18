@@ -48,7 +48,6 @@ public class CourseController {
     @PostMapping(value = "/add")
     @ResponseBody
     public Result addCourse(@RequestBody Course course){
-
         courseService.insertCourse(course);
         return  new Result<Course>(course);
     }

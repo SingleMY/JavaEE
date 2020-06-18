@@ -2,10 +2,7 @@ package com.moyang.homework.pojo;
 
 import lombok.Data;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * @program: homework
@@ -15,10 +12,12 @@ import javax.persistence.Table;
  **/
 @Data
 @Table(name = "select_course")
+@Entity
 public class SelectCourse {
     @Id
+    private  String  sc;
     //@GeneratedValue(strategy = GenerationType.AUTO)
     private String course_no;
-    @Id
+
     private String sno;
 }

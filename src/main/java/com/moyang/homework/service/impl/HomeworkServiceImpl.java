@@ -6,6 +6,10 @@ import com.moyang.homework.service.HomeworkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.sql.Timestamp;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -19,6 +23,8 @@ public class HomeworkServiceImpl implements HomeworkService {
     @Autowired
     HomeworkDao homeworkDao;
 
+
+    int homework_num = 0;
     /**
      * 添加
      *
@@ -26,7 +32,21 @@ public class HomeworkServiceImpl implements HomeworkService {
      */
     @Override
     public void insertHomework(Homework homework) {
-
+        homework.setH_id(String.valueOf(++homework_num));
+        Timestamp ts = new Timestamp(System.currentTimeMillis());
+        DateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String tsStr = sdf.format(ts);
+        homework.setCreate_time(tsStr);
+        SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
+        SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        try {
+            Date date = sdf1.parse(homework.getDeadline());
+            String str = sdf2.format(date);
+           homework.setDeadline(str);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+       homeworkDao.save(homework);
     }
 
     /**
@@ -36,7 +56,7 @@ public class HomeworkServiceImpl implements HomeworkService {
      */
     @Override
     public void deleteHomework(String h_id) {
-
+         homeworkDao.deleteById(h_id);
     }
 
     /**
@@ -46,7 +66,7 @@ public class HomeworkServiceImpl implements HomeworkService {
      */
     @Override
     public void updateHomework(Homework homework) {
-
+        homeworkDao.save(homework);
     }
 
     /**

@@ -32,4 +32,27 @@ public class HomeworkController {
         List<Homework> homeworkList = homeworkService.getHomeworkListByCourse(course.getCourse_no());
         return  new Result<List<Homework>>(homeworkList);
     }
+
+    @LoginRequired
+    @PostMapping(value = "/add")
+    public Result addHomework(@RequestBody Homework homework){
+
+        homeworkService.insertHomework(homework);
+        return  new Result<Homework>(homework);
+    }
+
+    @LoginRequired
+    @PostMapping(value = "/update")
+    public Result updateHomework(@RequestBody Homework homework){
+
+        homeworkService.updateHomework(homework);
+        return  new Result<Homework>(homework);
+    }
+
+    @LoginRequired
+    @PostMapping(value = "/delete")
+    public Result deleteHomework(@RequestBody Homework homework){
+        homeworkService.deleteHomework(homework.getH_id());
+        return  new Result<Homework>(homework);
+    }
 }

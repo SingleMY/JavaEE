@@ -25,9 +25,11 @@ public interface StudentService {
      */
     List<Student> getStudentList(String course_no);
 
+    List<Student> getAllStudent();
     /**
      * 查询单个
      */
     Student getStudentBySno(String sno);
 
+    List<Student> getunStudentList(String course_no);
 }

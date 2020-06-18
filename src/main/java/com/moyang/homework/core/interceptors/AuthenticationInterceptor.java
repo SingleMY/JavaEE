@@ -88,7 +88,12 @@ public class AuthenticationInterceptor implements HandlerInterceptor {
     // 请求处理之后进行调用，但是在视图被渲染之前（Controller方法调用之后）
     @Override
     public void postHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, ModelAndView modelAndView) throws Exception {
-
+        if (modelAndView != null) {
+            // 防止出现空指针
+            // 在springboot中如果是错误页肯定不会出现mv为null的情况
+            modelAndView.setViewName("/err");
+            // 注意：该请求只是测试试用，并没有实际的意义
+        }
     }
 
     // 在整个请求结束之后被调用，也就是在DispatcherServlet 渲染了对应的视图之后执行（主要是用于进行资源清理工作）

@@ -1,7 +1,9 @@
 package com.moyang.homework.service.impl;
 
 import com.moyang.homework.dao.StudentDao;
+import com.moyang.homework.dao.UserDao;
 import com.moyang.homework.pojo.Student;
+import com.moyang.homework.pojo.User;
 import com.moyang.homework.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,6 +21,9 @@ public class StudentServiceImpl implements StudentService {
 
     @Autowired
     StudentDao studentDao;
+
+    @Autowired
+    UserDao userDao;
     /**
      * 添加
      *
@@ -26,6 +31,13 @@ public class StudentServiceImpl implements StudentService {
      */
     @Override
     public void insertStudent(Student student) {
+        User user = new User();
+        user.setUser_id(student.getSno());
+        user.setUsername(student.getSname());
+        user.setPassword("123456");
+        user.setAvatar("http://qiniu.1542051400.club/avatar.jpg");
+        user.setRoles("student");
+        userDao.save(user);
         studentDao.save(student);
     }
 
@@ -36,7 +48,7 @@ public class StudentServiceImpl implements StudentService {
      */
     @Override
     public void deleteStudent(String sno) {
-
+       studentDao.deleteById(sno);
     }
 
     /**
@@ -46,7 +58,7 @@ public class StudentServiceImpl implements StudentService {
      */
     @Override
     public void updateStudent(Student student) {
-
+       studentDao.save(student);
     }
 
     /**
@@ -56,7 +68,12 @@ public class StudentServiceImpl implements StudentService {
      */
     @Override
     public List<Student> getStudentList(String course_no) {
-        return null;
+        return studentDao.getStudentListByCourse(course_no);
+    }
+
+    @Override
+    public List<Student> getAllStudent() {
+        return studentDao.findAll();
     }
 
     /**
@@ -66,6 +83,12 @@ public class StudentServiceImpl implements StudentService {
      */
     @Override
     public Student getStudentBySno(String sno) {
-        return null;
+
+        return studentDao.getOne(sno);
+    }
+
+    @Override
+    public List<Student> getunStudentList(String course_no) {
+        return studentDao.getunStudentListByCourse(course_no);
     }
 }

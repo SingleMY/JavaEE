@@ -1,11 +1,9 @@
 package com.moyang.homework.pojo;
 
 import lombok.Data;
+import org.springframework.context.annotation.Bean;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Objects;
 
 /**
@@ -17,9 +15,12 @@ import java.util.Objects;
 
 @Data
 @Table(name = "submit")
+@Entity
 public class Submit {
     @Id
     //@GeneratedValue(strategy = GenerationType.AUTO)
+    private String submit_id;
+
     private String h_id;
     private String sno;
     private String finished;
